@@ -87,11 +87,52 @@ the simulator to 'tilt' it in different directions. Great for quickly testing ou
 [live example](https://makecode.com/_J3w887E2eAH1)
 
 
+## Button Combos
+
+* There is an extension called *button-combos*. It lets you work with sequences of button presses. I've only
+used the `on button combination` block so far, but there are many other blocks.
+
+![combo blocks](img/combos-blocks.png)
+
+Here's an example that shows a hamburger when the player presses the [Konami Code](https://en.wikipedia.org/wiki/Konami_Code).
+![Konami Code example](img/konami-example.png)
+[live example](https://makecode.com/_0EcemFEiWfi3)
+
+
+## Fades and Palette Shifts
+
 
 * Palette shift and color fade
-* Doc controller combos 
-* Test two player
-* SD Card
+
+
+## Multi-player
+
+There are two ways to do multi-player with the MeowBit. First, you can have each user use 
+different buttons on the same device. This is will be annoying on the MeowBit since both 
+of you will be trying to hold the device. For turn based games you could hand it back and forth. 
+The Battleship-like [Salvo game](https://forum.makecode.com/t/presenting-salvo/199) by AlexK does this.
+
+The other way is by physically connecting two MeowBits. *They have what appears to be a headphone jack. 
+It is not!  In fact, do not plug in real headphones. It might fry them.* 
+
+This connector is for the JACDAC connection, which is a new protocol to send information between multiple
+devices over a single wire. The JACDAC blocks handle this. In practice 
+the code seems to be very alpha and doesn't work very well. My son was able to create a little example
+that sends a hard coded message from one MeowBit to another, but the sending didn't work every time. 
+Sometimes we had to send a message multiple times before it was received.  I'm not going
+to put an example here until the code is more stable.
+
+
+## SD Card
+
+The MeowBit has a full size SD Card slot which, according to the docs, is for *store programs or extend wireless modules)*. I have found no documentation on how to use it, or indication that it works at all.
+I sent an email to the MeowBit manufacturers to see if it was ever turned on. For now I assume it does not
+do anything.
+
 * Seven segment
 * Storyboard only JS
+
+## Storyboard
+
+There 
 
