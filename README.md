@@ -149,6 +149,16 @@ either use a 3rd party extension the one in
 [this forum thread](https://forum.makecode.com/t/text-sprite-extension/1634),  or create an empty 
 sprite and use the `say` block. 
 
+## Keyboard and Mouse Extensions
+
+MakeCode Arcade has extensions to let your device pretend to be a mouse or
+[keyboard](https://arcade.makecode.com/reference/keyboard/) . 
+When connected to your computer your device can type keys or move the mouse. This is called a
+HID device. As far as I can tell *HID device mode does not work on the MeowBit*. Even
+just having the extension installed in my code caused the MeowBit to not load the app.
+
+ 
+
 ## Cool 3rd Party Extensions
 
 * [Generate Mazes](https://forum.makecode.com/t/mazes-extension/290)
