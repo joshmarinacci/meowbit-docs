@@ -137,8 +137,18 @@ do anything.
 
 ## Controlling the LEDs
 
-The Pins module (also called Hardware 20 Pin Connector) has [poor
+The Pins module (also called 20 Pin Edge Connector) has [poor
 documentation](https://arcade.makecode.com/reference/pins/).
+
+You can turn on one of the LEDs with the Pins module, but it's so dim that it doesn't
+show through the silicon case.  
+
+![turn on LED](img/led.png)
+
+There is also a MeowBit specific extension [here](https://github.com/KittenBot/meow-iobit) 
+but it has not been updated in 11 months. Also, it doesn't seem to do anything that
+the Pins module couldn't do, so I'd stick with Pins.
+
 
 
 ## Drawing Graphics and Text
