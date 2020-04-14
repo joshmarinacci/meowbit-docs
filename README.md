@@ -20,6 +20,8 @@ it into a .uf2 file.  This is the actual binary that goes on your device.  Plug 
 automatically mount as a flash drive. Drag the downloaded .uf2 file to the drive. The MeowBit will automatically disconnect
 and load the game. It's that easy.
 
+## Updating Firmware
+
 ## Learning MakeCode Arcade
 
 The MakeCode Arcade lessons are great for learning how to code and build games.  I went through the
@@ -102,7 +104,7 @@ Here's an example that shows a hamburger when the player presses the [Konami Cod
 ## Fades and Palette Shifts
 
 
-* Palette shift and color fade
+
 
 
 ## Multi-player
@@ -129,10 +131,23 @@ The MeowBit has a full size SD Card slot which, according to the docs, is for *s
 I sent an email to the MeowBit manufacturers to see if it was ever turned on. For now I assume it does not
 do anything.
 
-* Seven segment
-* Storyboard only JS
+## Seven segment
 
 ## Storyboard
 
-There 
+## Controlling the LEDs
+
+
+
+## Drawing Graphics and Text
+
+Under the Advanced Image category are blocks to draw rectangles, lines, and pixels to an picture. 
+There are not any blocks for drawing text.  The current recommendation from the Make Code team is to
+either use a 3rd party extension the one in
+[this forum thread](https://forum.makecode.com/t/text-sprite-extension/1634),  or create an empty 
+sprite and use the `say` block. 
+
+## Cool 3rd Party Extensions
+
+* [Generate Mazes](https://forum.makecode.com/t/mazes-extension/290)
 
