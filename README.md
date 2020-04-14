@@ -36,7 +36,9 @@ what I'm covering here.
 ## Sensors
 
 The MeowBit has built in sensors for light, temperature, and a gyroscope/accelerometer.  You can use them
-with the Controller Extras extension. This extension will give you extra blocks in the 'Controller' category.
+with the **Controller** extension. This extension will give you extra blocks in the 'Controller' category.
+
+![controller extension](img/controller-extension.png)
 
 ### Light
 
@@ -55,8 +57,24 @@ the sprite *say* the current light level.  If the light becomes
 [live example](https://makecode.com/_3XbUYE2VdH8e)
 
  
+### Temperature
 
-* Document light sensor, gyro, temp
+The temp sensor works similarly to the light sensor. On the MeowBit the physical sensor is near the D-pad. 
+The sensor is not very accurate and is probably skewed by having the silicon case on it, but it should be enough
+for simple tests.  Add the same *Controller* extension to get the temp sensor blocks.
+
+* get the current temp as Fahrenheit or Celsius.
+
+The example below shows the current temp once a second.
+
+![temp sensor](img/temp_sensor.png)
+
+[live example](https://makecode.com/_UTyR9tft0YVY)
+
+### Gyroscope / Tilt sensor
+ 
+The gyroscope can also be accessed from the *Controller* extension. 
+
 
 
 
