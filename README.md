@@ -73,8 +73,18 @@ The example below shows the current temp once a second.
 
 ### Gyroscope / Tilt sensor
  
-The gyroscope can also be accessed from the *Controller* extension. 
+The gyroscope can also be accessed from the *Controller* extension.  There are two blocks which do:
 
+* `on shake`, called whenever the meowbit is physically shaken. You can change the event to look for
+tilt left, tilt right, etc, as well as the general strength in terms of gravity. This could be useful
+for detecting when the Meowbit is dropped or hit.
+* `acceleration`, to get the current value of the sensor. You can get the x, y, z or strength (which I think is an average).
+The acceleration is a value from -1024 to +1024 for each direction.
+* When you add any code which uses the gyro the simulator will get a new tilt ability. Just move your mouse over
+the simulator to 'tilt' it in different directions. Great for quickly testing out your code.
+
+![gyro sensor](img/gyro_sensor.png)
+[live example](https://makecode.com/_J3w887E2eAH1)
 
 
 
