@@ -154,7 +154,7 @@ sprite and use the `say` block.
 MakeCode Arcade has extensions to let your device pretend to be a mouse or
 [keyboard](https://arcade.makecode.com/reference/keyboard/) . 
 When connected to your computer your device can type keys or move the mouse. This is called a
-HID device. As far as I can tell *HID device mode does not work on the MeowBit*. Even
+HID device. As far as I can tell **HID device mode does not work on the MeowBit**. Even
 just having the extension installed in my code caused the MeowBit to not load the app.
 
  
