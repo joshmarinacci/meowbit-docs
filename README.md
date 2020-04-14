@@ -33,10 +33,37 @@ I found very little specific to using MeowBit with MakeCode arcade, in particula
 what I'm covering here.
 
 
+## Sensors
+
+The MeowBit has built in sensors for light, temperature, and a gyroscope/accelerometer.  You can use them
+with the Controller Extras extension. This extension will give you extra blocks in the 'Controller' category.
+
+### Light
+
+The built in light sensor is just below the switch in the top center of the MeowBit screen. The light value
+is a number between 0 and 255. There are blocks to: 
+
+* get the current light level with the `light level` block.
+* detect light level changes with the `on light [dark]` block.
+
+This example creates a lightbulb sprite. Every second it makes
+the sprite *say* the current light level.  If the light becomes
+*dark* then it says 'It got dark'. 
+
+![light level](img/light_sensor.png) 
+
+[live example](https://makecode.com/_3XbUYE2VdH8e)
+
+ 
+
 * Document light sensor, gyro, temp
+
+
+
 * Palette shift and color fade
 * Doc controller combos 
 * Test two player
 * SD Card
 * Seven segment
 * Storyboard only JS
+
