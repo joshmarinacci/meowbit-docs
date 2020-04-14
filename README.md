@@ -137,6 +137,8 @@ do anything.
 
 ## Controlling the LEDs
 
+The Pins module (also called Hardware 20 Pin Connector) has [poor
+documentation](https://arcade.makecode.com/reference/pins/).
 
 
 ## Drawing Graphics and Text
