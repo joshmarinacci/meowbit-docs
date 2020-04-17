@@ -105,6 +105,35 @@ Here's an example that shows a hamburger when the player presses the [Konami Cod
 
 
 
+## Advanced Audio
+
+MakeCode Arcade has blocks to play pre-designed sounds or a short melody you define. However, 
+the Javascript API has a much richer API, [documented here](https://arcade.makecode.com/developer/sound).
+Essentially you make a string with commands for different notes. For example, the following code:
+
+```typescript
+"C4:1, D4:2, R:3"
+``` 
+Would play middle C for one beat, D for two beats, then rest for three beats.
+
+You can also adjust the type of synth used to generate the music. You can change
+the waveform type and the ADSR envelope like this:
+
+```typescript
+"~2, @50,50,100,0"
+```
+
+Sets to waveform 2 (sawtooth), with attack=50ms, decay=50ms, sustain volume to 100 (out of 255) and release to 0ms. 
+
+The challenge is that you can't use these on the blocks side. If you type them in on the JS side then
+switch back it will complain that you have invalid code.  I found a trick though. If you split your strings up
+and add them together, the blocks side will turn it into a joined array of strings. 
+
+![advanced audio](img/advanced_audio.png)
+
+I also discovered that while audio normally plays in the foreground and will have to complete before the
+next block is executed, you can actually get background music by put it inside of a forever block. This will
+run the audio in a different thread.
 
 
 ## Multi-player
